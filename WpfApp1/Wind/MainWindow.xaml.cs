@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Wind
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -27,7 +27,12 @@ namespace WpfApp1
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
-
+            if (true)
+            {
+                AdminWindow admin = new AdminWindow();
+                admin.Show();
+                this.Close();
+            }
         }
 
         private void BorderDrag_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)//для передвижения окна за статусбар
