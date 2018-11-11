@@ -39,12 +39,6 @@ namespace WpfApp1.Wind
                 registr.Show();
                 this.Close();
             }
-            else if (false)
-            {
-                DoctorWindow doctor = new DoctorWindow();
-                doctor.Show();
-                this.Close();
-            }
         }
 
         private void BorderDrag_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)//для передвижения окна за статусбар

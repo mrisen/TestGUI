@@ -35,6 +35,10 @@ namespace WpfApp1.Wind
 
         private void ChangeAcc_Click(object sender, RoutedEventArgs e)//поменять акк
         {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+
         }
         private void MinimizedWin_CLick(object sender, RoutedEventArgs e)//кнопка свернуть окно
         {
