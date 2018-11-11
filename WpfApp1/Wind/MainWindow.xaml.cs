@@ -27,10 +27,16 @@ namespace WpfApp1.Wind
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
-            if (true)
+            if (false)
             {
                 AdminWindow admin = new AdminWindow();
                 admin.Show();
+                this.Close();
+            }
+            else if (true)
+            {
+                RegistrWindow registr = new RegistrWindow();
+                registr.Show();
                 this.Close();
             }
         }

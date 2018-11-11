@@ -22,3 +22,5 @@ C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\MainWindow.g.cs
 C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\MainWindow.baml
 C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\AdminWindow.g.cs
 C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\AdminWindow.baml
+C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\RegistrWindow.g.cs
+C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\obj\Debug\Wind\RegistrWindow.baml
