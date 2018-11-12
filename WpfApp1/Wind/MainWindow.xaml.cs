@@ -27,16 +27,22 @@ namespace WpfApp1.Wind
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
-            if (false)
+            if (txt_user.Text=="1")
             {
                 AdminWindow admin = new AdminWindow();
                 admin.Show();
                 this.Close();
             }
-            else if (true)
+            if (txt_user.Text == "2")
             {
                 RegistrWindow registr = new RegistrWindow();
                 registr.Show();
+                this.Close();
+            }
+            if (txt_user.Text == "3")
+            {
+                DoctorWindow doctor = new DoctorWindow();
+                doctor.Show();
                 this.Close();
             }
         }
@@ -49,6 +55,11 @@ namespace WpfApp1.Wind
         private void CloseLog_Click(object sender, RoutedEventArgs e)//закрыть
         {
             Application.Current.Shutdown();
+        }
+
+        private void txt_user_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

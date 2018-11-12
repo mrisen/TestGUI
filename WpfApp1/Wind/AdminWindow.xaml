@@ -71,7 +71,7 @@
                         <TextBox x:Name="txt_insertPassword" materialDesign:HintAssist.Hint="Пароль" materialDesign:HintAssist.IsFloating="True" FontSize="20"  Width="200"></TextBox>
                     </StackPanel>
 
-                    
+
 
                     <StackPanel Orientation="Horizontal"  Margin="30,10,30,0">
                         <TextBox x:Name="txt_insertRole" materialDesign:HintAssist.Hint="Роль" materialDesign:HintAssist.IsFloating="True" FontSize="20"  Width="200"></TextBox>
@@ -86,7 +86,7 @@
                         </Button>
                     </StackPanel>
 
-                   
+
 
                     <StackPanel  Margin="30,30,30,0" HorizontalAlignment="Left">
                         <Button MinHeight="60" Width="200" Click="Delete_CLick" Foreground="White" Background="#FFB2B2B2" BorderBrush="{x:Null}">
@@ -118,9 +118,7 @@
                 <StackPanel Height="420" Grid.Row="0">
                     <DataGrid Background="LightGray" Margin="20" Height="380" x:Name="dataGridViewUsers"/>
                 </StackPanel>
-
-                <StackPanel Height="264" Grid.Row="1">
-
+                <StackPanel Grid.Row="1" Margin="0,20,0,9.8">
                     <StackPanel Orientation="Horizontal" Margin="50, 20, 50,0">
                         <Button Height="60" Width="60" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Margin="20,10,10,0" Click="SearchLog_Click" Background="#FFB2B2B2" BorderBrush="{x:Null}">
                             <materialDesign:PackIcon Kind="Magnify" Height="40" Foreground="White" Width="50"></materialDesign:PackIcon>
@@ -132,23 +130,20 @@
                             </StackPanel>
                         </Button>
                     </StackPanel>
-                    
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,0">
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
                         <Button  Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}" CommandTarget="{Binding ElementName=hechoReg}" Style="{DynamicResource MaterialDesignRaisedAccentButton}"
                             Height="60" Width="300"  HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFD3113D" Foreground="#DDFFFFFF" BorderBrush="{x:Null}">
-                            <TextBlock Width="Auto" FontSize="24" Text="Добавить Регистратора" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Width="Auto" FontSize="24" Text="Добавить регистратора" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Button>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,40">
                         <Button  Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}" CommandTarget="{Binding ElementName=hechoDoc}" Style="{DynamicResource MaterialDesignRaisedAccentButton}"
                             Height="60" Width="300"  HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFD3113D" Foreground="#DDFFFFFF" BorderBrush="{x:Null}">
-                            <TextBlock Width="Auto" FontSize="24" Text="Добавить доктора" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Width="Auto" FontSize="24" Text="Добавить врача" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-
-                    
-
                 </StackPanel>
             </Grid>
         </Grid>
@@ -157,18 +152,12 @@
         <materialDesign:DialogHost IsOpen="False" x:Name="hechoReg" Grid.RowSpan="3">
             <materialDesign:DialogHost.DialogContent>
                 <StackPanel Orientation="Vertical" Margin="15">
-                    <TextBlock Text="Регестрация Регистратора" Margin="5,5,5,0" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
-                    <TextBox x:Name="txt_regID1" materialDesign:HintAssist.Hint="Логин" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <PasswordBox x:Name="txt_regPass1" materialDesign:HintAssist.Hint="Пароль" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></PasswordBox>
-                    <TextBox x:Name="txt_regName1" materialDesign:HintAssist.Hint="Имя" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regSurname1" materialDesign:HintAssist.Hint="Фамилия" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regPantronymic1" materialDesign:HintAssist.Hint="Отчество" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regMobile1" materialDesign:HintAssist.Hint="Телефон" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regEmail1" materialDesign:HintAssist.Hint="Почта" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <DatePicker x:Name="txt_regbirth1" Height="50" Width="225" FontSize="20" materialDesign:HintAssist.Hint="Дата рождения" materialDesign:HintAssist.IsFloating="True" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalContentAlignment="Bottom"></DatePicker>
-                    <TextBox x:Name="txt_regSpec1" materialDesign:HintAssist.Hint="Специализация" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regExp1" materialDesign:HintAssist.Hint="Стаж" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,20"></TextBox>
-                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Регистрация регистратора" Margin="5,5,5,0" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+                    <TextBox x:Name="txt_nameRegistr" materialDesign:HintAssist.Hint="Имя" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_lastnameRegistr" materialDesign:HintAssist.Hint="Фамилия" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_fnameRegistr" materialDesign:HintAssist.Hint="Отчество" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <StackPanel Orientation="Horizontal" Margin="20">
+
                         <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=hecho2}" 
                         Style="{DynamicResource MaterialDesignRaisedLightButton}" Content="Добавить" FontSize="18" Margin="0,0,16,0" Foreground="White" Click="InsertDoctor_Click"/>
                         <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=hecho2}"
@@ -179,21 +168,17 @@
         </materialDesign:DialogHost>
 
         <!--Диалог регестрации-->
-        <materialDesign:DialogHost IsOpen="False" x:Name="hechoDoc" Grid.RowSpan="2" Margin="-10,-87,10,87">
+        <materialDesign:DialogHost IsOpen="False" x:Name="hechoDoc" Grid.RowSpan="2" Height="800" VerticalAlignment="Bottom">
             <materialDesign:DialogHost.DialogContent>
                 <StackPanel Orientation="Vertical" Margin="15">
-                    <TextBlock Text="Регестрация доктора" Margin="5,5,5,0" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
-                    <TextBox x:Name="txt_regID" materialDesign:HintAssist.Hint="Логин" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <PasswordBox x:Name="txt_regPass" materialDesign:HintAssist.Hint="Пароль" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></PasswordBox>
-                    <TextBox x:Name="txt_regName" materialDesign:HintAssist.Hint="Имя" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regSurname" materialDesign:HintAssist.Hint="Фамилия" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regPantronymic" materialDesign:HintAssist.Hint="Отчество" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regMobile" materialDesign:HintAssist.Hint="Телефон" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regEmail" materialDesign:HintAssist.Hint="Почта" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <DatePicker x:Name="txt_regbirth" Height="50" Width="225" FontSize="20" materialDesign:HintAssist.Hint="Дата рождения" materialDesign:HintAssist.IsFloating="True" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalContentAlignment="Bottom"></DatePicker>
-                    <TextBox x:Name="txt_regSpec" materialDesign:HintAssist.Hint="Специализация" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
-                    <TextBox x:Name="txt_regExp" materialDesign:HintAssist.Hint="Стаж" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,20"></TextBox>
-                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Регистрация доктора" Margin="5,5,5,0" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+                    <TextBox x:Name="txt_namePacient" materialDesign:HintAssist.Hint="Имя" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_lastnamePacient" materialDesign:HintAssist.Hint="Фамилия" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_fnamePacient" materialDesign:HintAssist.Hint="Отчество" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_pasportId" materialDesign:HintAssist.Hint="Номер кабинета" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_adress" materialDesign:HintAssist.Hint="Специализация" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <TextBox x:Name="txt_area" materialDesign:HintAssist.Hint="Участок" materialDesign:HintAssist.IsFloating="True" FontSize="20" Width="225" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBox>
+                    <StackPanel Orientation="Horizontal" Margin="20">
                         <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=hecho2}" 
                         Style="{DynamicResource MaterialDesignRaisedLightButton}" Content="Добавить" FontSize="18" Margin="0,0,16,0" Foreground="White" Click="InsertDoctor_Click"/>
                         <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=hecho2}"

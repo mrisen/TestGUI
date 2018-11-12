@@ -32,7 +32,7 @@
             <Grid>
                 <materialDesign:ColorZone Mode="PrimaryDark" Background="#FF2D7BA8">
                     <StackPanel HorizontalAlignment="Right">
-                        <Button Height="30" Width="30" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Padding="0" Click="CloseLog_Click" Background="#FF2D7BA8" BorderBrush="#FF2D7BA8" >
+                        <Button Height="30" Width="30" IsCancel="True" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Padding="0" Click="CloseLog_Click" Background="#FF2D7BA8" BorderBrush="#FF2D7BA8" >
                             <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
                         </Button>
                     </StackPanel>
@@ -60,7 +60,7 @@
 
                 <StackPanel Orientation="Horizontal" Margin="0,120,0,0">
                     <materialDesign:PackIcon Kind="Account" Foreground="{Binding ElementName=txt_user, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="40,0,10,0" Width="50" Height="50"></materialDesign:PackIcon>
-                    <TextBox x:Name="txt_user" Height="50"  Width="350" materialDesign:HintAssist.Hint="Пользователь" materialDesign:HintAssist.IsFloating="True" FontSize="20"/>
+                    <TextBox x:Name="txt_user" Height="50"  Width="350" materialDesign:HintAssist.Hint="Пользователь" materialDesign:HintAssist.IsFloating="True" FontSize="20" TextChanged="txt_user_TextChanged"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
@@ -68,7 +68,7 @@
                     <PasswordBox x:Name="txt_password" Height="50"  Width="350" materialDesign:HintAssist.Hint="Пароль" materialDesign:HintAssist.IsFloating="True" FontSize="20"/>
                 </StackPanel>
 
-                <Button Click="LogIn_Click" Style="{DynamicResource MaterialDesignRaisedAccentButton}" Content="ВОЙТИ"   Background="#FFD3113D" Foreground="#DDFFFFFF" Margin="0,80,0,30" BorderBrush="{x:Null}" Width="200" Height="50" Padding="0 15 0 15" HorizontalAlignment="Center" FontSize="20"/>
+                <Button Click="LogIn_Click" Style="{DynamicResource MaterialDesignRaisedAccentButton}" Content="ВОЙТИ" IsDefault="True"  Background="#FFD3113D" Foreground="#DDFFFFFF" Margin="150,80,150,30" BorderBrush="{x:Null}" Width="200" Height="58" Padding="0 15 0 15" HorizontalAlignment="Center" FontSize="20"/>
 
             </StackPanel>
         </Grid>

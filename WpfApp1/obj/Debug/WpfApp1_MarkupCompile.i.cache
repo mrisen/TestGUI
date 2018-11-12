@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Kulak\source\repos\WpfApp1\WpfApp1\App.xaml
-3-1579578997
+4-1603643370
 
-111759645357
+12-190005892
 15-171237555
-Wind\AdminWindow.xaml;Wind\MainWindow.xaml;Wind\RegistrWindow.xaml;
+Wind\AdminWindow.xaml;Wind\DoctorWindow.xaml;Wind\MainWindow.xaml;Wind\RegistrWindow.xaml;
 
-True
+False
 
